@@ -15,6 +15,7 @@
 #pragma once
 
 #include <nanogui/popupbutton.h>
+#include <nanogui/vscrollpanel.h>
 
 NAMESPACE_BEGIN(nanogui)
 
@@ -83,6 +84,9 @@ protected:
 
     /// The current index this ComboBox has selected.
     int mSelectedIndex;
+
+    VScrollPanel* mScrollPanel = 0;
+    Widget*       mButtons     = 0;
 
 public:
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW
